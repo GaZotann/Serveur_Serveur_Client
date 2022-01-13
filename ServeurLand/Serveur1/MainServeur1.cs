@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ServeurLand.Serveur1
 {
-    class MainServeur1
+    public class MainServeur1
     {
+        public static void main()
+        {
+
+        }
     }
 }

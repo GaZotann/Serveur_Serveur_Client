@@ -1,4 +1,6 @@
 ﻿using System;
+using ServeurLand.Serveur1;
+using ServeurLand.Serveur2;
 
 namespace ServeurLand
 {
@@ -13,9 +15,11 @@ namespace ServeurLand
             {
                 case 1:
                     Console.WriteLine("Démarrage du serveur 1");
+                    MainServeur1.main();
                     break;
                 case 2:
                     Console.WriteLine("Démarrage du serveur 2");
+                    MainServeur2.main();
                     break;
                 default:
                     Console.WriteLine("Il faut mettre 1 ou 2... Fin du programme");
