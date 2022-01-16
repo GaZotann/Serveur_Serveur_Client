@@ -30,3 +30,11 @@ D:\projetperso\serveur_serveur_client\Serveur_Serveur_Client\ServeurLand\obj\Deb
 D:\projetperso\serveur_serveur_client\Serveur_Serveur_Client\ServeurLand\obj\Debug\net5.0\ref\ServeurLand.dll
 D:\projetperso\serveur_serveur_client\Serveur_Serveur_Client\ServeurLand\obj\Debug\net5.0\ServeurLand.pdb
 D:\projetperso\serveur_serveur_client\Serveur_Serveur_Client\ServeurLand\obj\Debug\net5.0\ServeurLand.genruntimeconfig.cache
+D:\projets perso\serveur\Serveur_Serveur_Client\ServeurLand\obj\Debug\net5.0\ServeurLand.csprojAssemblyReference.cache
+D:\projets perso\serveur\Serveur_Serveur_Client\ServeurLand\obj\Debug\net5.0\ServeurLand.GeneratedMSBuildEditorConfig.editorconfig
+D:\projets perso\serveur\Serveur_Serveur_Client\ServeurLand\obj\Debug\net5.0\ServeurLand.AssemblyInfoInputs.cache
+D:\projets perso\serveur\Serveur_Serveur_Client\ServeurLand\obj\Debug\net5.0\ServeurLand.AssemblyInfo.cs
+D:\projets perso\serveur\Serveur_Serveur_Client\ServeurLand\obj\Debug\net5.0\ServeurLand.csproj.CoreCompileInputs.cache
+D:\projets perso\serveur\Serveur_Serveur_Client\ServeurLand\obj\Debug\net5.0\ServeurLand.dll
+D:\projets perso\serveur\Serveur_Serveur_Client\ServeurLand\obj\Debug\net5.0\ref\ServeurLand.dll
+D:\projets perso\serveur\Serveur_Serveur_Client\ServeurLand\obj\Debug\net5.0\ServeurLand.pdb
