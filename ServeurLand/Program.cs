@@ -1,6 +1,11 @@
 ﻿using System;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
 using ServeurLand.Serveur1;
 using ServeurLand.Serveur2;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ServeurLand
 {
@@ -9,17 +14,20 @@ namespace ServeurLand
         static void Main(string[] args)
         {
             int mode;
-            Console.WriteLine("Tapez 1 pour le serveur1, tapez 2 pour le serveur2: ");
-            mode = Int32.Parse(Console.ReadLine());
+            //mode = Int32.Parse(Console.ReadLine());
+            mode = Int32.Parse(args[0]);
+
+            String commande = String.Join("", args[1]);
             switch (mode)
             {
                 case 1:
-                    Console.WriteLine("Démarrage du serveur 1");
-                    MainServeur1.main();
+                    Task.Run(
+                        MainServeur2.mainServer2
+                    );
+                    MainServeur1.mainServer1(commande); 
                     break;
                 case 2:
-                    Console.WriteLine("Démarrage du serveur 2");
-                    MainServeur2.main();
+                    MainServeur2.mainServer2();
                     break;
                 default:
                     Console.WriteLine("Il faut mettre 1 ou 2... Fin du programme");

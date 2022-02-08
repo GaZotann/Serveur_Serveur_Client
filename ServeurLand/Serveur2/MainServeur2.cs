@@ -2,17 +2,20 @@
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 
 namespace ServeurLand.Serveur2
 {
     public class MainServeur2
     {
-        public static void main() //serveur d'écoute
+        public static void mainServer2() //serveur d'écoute
         {
+            Console.WriteLine("Démarrage du serveur 2");
             IPHostEntry ips = Dns.GetHostEntry(""); //on choppe l'adresse ip du DNS 
             Socket listener = new Socket(SocketType.Stream, ProtocolType.Tcp); //on créer un socket 
-            listener.Bind(new IPEndPoint(ips.AddressList[0], 9199)); //on dit à l'os d'accepter des requetes de connections
 
+            //listener.Bind(new IPEndPoint(ips.AddressList[0], 9199)); //on dit à l'os d'accepter des requetes de connections
+            listener.Bind(new IPEndPoint(IPAddress.IPv6Any, 9199));
             listener.Listen(5); // on laisse 5 écoutes avant de rejeter 
 
             byte[] lenbuf = new byte[sizeof(int)];
@@ -33,7 +36,7 @@ namespace ServeurLand.Serveur2
 
                     red = request.Receive(buffer);//on récupère le message
 
-                    if (red != lenbuf.Length) //on vérifie les taille
+                    if (red != buffer.Length) //on vérifie les taille
                         throw new Exception();
 
                     String command = Encoding.UTF8.GetString(buffer);//on met ce qu'il y a dans le buffer dans un string 

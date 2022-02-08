@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ServeurLand": {
+      "commandName": "Project",
+      "commandLineArgs": "1 RunMinecraft"
+    }
+  }
+}
